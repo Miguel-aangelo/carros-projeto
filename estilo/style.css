@@ -1,0 +1,179 @@
+@charset "UTF-8";
+ 
+:root{
+   --cor1:#8498c0;
+   --cor2:#7387ae;
+   --cor3:#62769c;
+   --cor4:#50658a;
+   --cor5:#3f5478;
+}
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+       background-color: #bfd8e9;
+    }
+    a.externo::after {
+ content: '\00A0\1F517';
+      /*todo link externo terá o desenho da ancora*/   
+    }
+header{
+    background-image: linear-gradient(to bottom,
+     var(--cor1), var(--cor5));
+    min-height: 150px;
+    text-align: center;/*Centralizar o titulo*/
+    padding-top: 40px;
+    min-width: 300px;
+    max-width:1040px;
+    margin: auto;/*Centraliza a cor*/
+    
+}
+header > h1{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    /*font-weight: normal;*/
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px black;
+   
+   }
+   header > p {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: white ;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px black;
+   }
+   nav > a {
+    color: black;
+    padding: 10px;/*Afastar da margem.*/
+    border-radius: 5px;
+  
+    text-decoration: none;/*Retirar o sublinhado*/
+    font-weight: bold; /*Negrito*/
+    transition-duration: .5s;/*Tempo que deva com o mouse em cima*/
+  
+   }
+   nav > a:hover {/*Cor do Links*/
+    background-color: #e4e7eb;
+    color: #3f5478;/*A lentra mudara de cor*/
+ 
+   }
+nav{/*Cor da barra dos Links*/
+  background-color: #576f97;
+  height: 20px;
+  min-width: 300px;
+   max-width:1040px;
+  margin: auto;
+
+}
+
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    /*border-top-right-radius: 10px;(Borda fica com curva)*/
+   padding: 20px;/*Afastar da margem*/
+   box-shadow: 0px 0px 10px black;/*Sombra*/
+}
+main p{
+    margin: 15px 0px; /*Organiza as margem do texto*/
+    text-align: justify;
+    text-indent: 30px;/*Separar da margem*/
+    font-size: 1em;
+    line-height: 1.5em;/*Altura da linha*/
+}
+main strong{
+    color: #3f5478;
+    font-weight: bold;
+    /*background-color: #bfd8e9;
+    padding: 2px 6px;*/
+}
+main a {
+     text-decoration: none;
+     font-weight: bold;
+     color:#50658a ;
+     background-color: #cad7f1;
+     padding:  2px 6px;
+}
+main a:hover{
+ text-decoration: underline;/*Linha no Link*/
+ color: #282c31;
+}
+
+main img{
+
+    width: 100%;
+}
+main h1{
+    color: #50658a;
+
+}
+    main h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fdfdfd;
+        font-size: 1.3em;
+        background-image: linear-gradient(to right, var(--cor5), transparent);/*Ficará transparente*/
+        text-indent: 8px;/*Afastar da margem*/
+    }
+    div.video{
+        background-color: #3f5478;
+        /*margin-bottom: 30px;*/
+        margin:0px -20px 30px -20px;
+        padding: 20px;
+        padding-bottom: 60%; 
+        position: relative;
+  }
+     div.video > iframe{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+     }
+    aside{
+   background-color: #8498c0;
+   padding: 10px;
+   border-radius: 10px;
+    }
+    aside{
+        background-color: #8498c0;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px rgb(63, 98, 173);/*pintar borda*/
+    }
+    aside > h3{
+        background-color: #576f97;
+        color: white;
+        padding: 5px;
+        margin: -10px -10px 0px -10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    aside > ul{
+        list-style-type: '\2714\00A0\00A0';
+        list-style-position: inside;/*por as bolinha para dentro da margem*/
+        columns: 2;/*Dividir em duas colunas a Lista*/
+    }
+    footer{
+        background-color: #233c69;
+        color: white;
+        text-align: center;
+        font-size: 0.8em;/*tamanho da letra*/
+        padding: 5px;
+    }
+    /*Se tiver Redes sociais no Rodapé*/
+
+    footer a{
+    color: white;
+    font-weight: bolder;
+     text-decoration: none;
+}
+    footer a:hover{
+     text-decoration: underline;
+     color:  #7387ae ;
+}
